@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ebay Template</title>
   <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+  <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
     crossorigin="anonymous">
@@ -70,6 +74,21 @@
       color: white;
     }
 
+    .tick::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      content: "\f00c";
+      color: orange;
+    }
+
+    .icon {
+      color: black;
+    }
+
     @media (min-width: 576px) {
 
       html,
@@ -87,7 +106,6 @@
       }
     }
 
-    // Large devices (desktops, 992px and up)
     @media (min-width: 992px) {
 
       html,
@@ -96,7 +114,6 @@
       }
     }
 
-    // Extra large devices (large desktops, 1200px and up)
     @media (min-width: 1200px) {
 
       html,
@@ -118,10 +135,11 @@
         </a>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link"
+              href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?ReturnUserEmail&requested=*robifis*">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Shop</a>
+            <a class="nav-link" href="!#">Shop</a>
           </li>
         </ul>
       </div>
@@ -130,15 +148,17 @@
   <div class="container">
     <div class="main">
       <div class="row py-5 align-items-center">
-        <div class="col-12 col-sm-8">
-          <img src="https://source.unsplash.com/random" class="img-fluid mx-auto d-block" alt="">
+        <div class="col-12">
+          <img
+            src="https://res.cloudinary.com/balls-to-code/image/upload/v1599727678/eBay/Phone/Samsung%20Galaxy%20S20%20Plus%20%28EE%29%205G%20100920/Resized/IMG_4455JPG_dnnxx2.png"
+            class="img-fluid mx-auto d-block" alt="">
         </div>
-        <div class="col-12 col-sm-4 d-flex justify-content-center">
+        <div class="col-12 d-flex justify-content-center">
           <div class="product-info my-4">
-            <h1 class="h1 text-center">Product Title</h1>
-            <h3 class="h6 text-muted text-center">A little bit more information about the product
+            <h1 class="h1 text-center">Samsung Galaxy S20 Plus 5G (Dual Sim)</h1>
+            <h3 class="h6 text-muted text-center">Mint condition - Unused Accessories - Dual Sim -
+              Case + 32GB Micro SD Card Included - Cosmic Grey Color - 128GB Storage
             </h3>
-            <button class="mt-4 btn btn-primary btn-block py-3 btn-lg">Add To Cart</button>
           </div>
         </div>
       </div>
@@ -150,12 +170,9 @@
             <h2>Description</h2>
           </div>
           <div class="card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veritatis, quae
-              libero ducimus maxime ad dolorum consequatur facilis dolore tempore vero odio,
-              obcaecati
-              aperiam sit at qui minus. Accusantium, animi? Illo, voluptas tempora. Quas quis
-              obcaecati deserunt excepturi quia delectus ipsam ratione veritatis doloribus. Cumque
-              odio officiis quia at consequuntur?</p>
+            <p>Selling my Samsung Galaxy S20 Plus 5G. I tried to swtich over to Android but can't
+              get used to it but it's an amazing phone, takes stunning picutres and I love the
+              display. Any questions just get in touch.</p>
           </div>
         </div>
       </div>
@@ -165,28 +182,32 @@
             <h2>Condition</h2>
           </div>
           <div class="card-body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo veritatis, quae
-              libero ducimus maxime ad dolorum consequatur facilis dolore tempore vero odio,
-              obcaecati
-              aperiam sit at qui minus. Accusantium, animi? Illo, voluptas tempora. Quas quis
-              obcaecati deserunt excepturi quia delectus ipsam ratione veritatis doloribus. Cumque
-              odio officiis quia at consequuntur?</p>
+            <p>The phone is in really good condition and has no marks or scatches on it. It's always
+              been kept in a case and I always look after my phones. The accessories are unused and
+              new.</p>
           </div>
         </div>
       </div>
       <div class="col-12 col-lg-12 col-sm-12 mb-5">
         <div class="card">
           <div class="card-header">
+
             <h2>What's Included</h2>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              Item One
+            <li class="list-group-item tick">
+              Samsung Galaxy S20 Plus Phone
             </li>
-            <li class="list-group-item">
-              Item Two
-            <li class="list-group-item">
-              Item Three
+            <li class="list-group-item tick">
+              Original Box
+            <li class="list-group-item tick">
+              32GB Mirco SD Card
+            </li>
+            <li class="list-group-item tick">
+              Clear Case
+            </li>
+            <li class="list-group-item tick">
+              Original and Unused accessories
             </li>
           </ul>
         </div>
@@ -194,23 +215,24 @@
     </div>
     <div class="image-gallery mb-5">
       <div class="row">
-        <div class="col-12 col-lg-4 col-md-6 mb-3"><img src="https://source.unsplash.com/random"
+        <div class="col-12 col-lg-4 col-md-6 mb-3"><img
+            src="https://res.cloudinary.com/balls-to-code/image/upload/v1599727678/eBay/Phone/Samsung%20Galaxy%20S20%20Plus%20%28EE%29%205G%20100920/Resized/IMG_4457JPG_qhjgtj.png"
             alt="" class="img-fluid">
         </div>
-        <div class="col-12 col-lg-4 col-md-6 mb-3"><img src="https://source.unsplash.com/random"
+        <div class="col-12 col-lg-4 col-md-6 mb-3"><img
+            src="https://res.cloudinary.com/balls-to-code/image/upload/v1599727678/eBay/Phone/Samsung%20Galaxy%20S20%20Plus%20%28EE%29%205G%20100920/Resized/IMG_4456JPG_tkxeuo.png"
             alt="" class="img-fluid">
         </div>
-        <div class="col-12 col-lg-4 col-md-6 mb-3"><img src="https://source.unsplash.com/random"
+        <div class="col-12 col-lg-4 col-md-6 mb-3"><img
+            src="https://res.cloudinary.com/balls-to-code/image/upload/v1599727678/eBay/Phone/Samsung%20Galaxy%20S20%20Plus%20%28EE%29%205G%20100920/Resized/IMG_4460JPG_fdgz63.png"
             alt="" class="img-fluid">
         </div>
-        <div class="col-12 col-lg-4 col-md-6 mb-3"><img src="https://source.unsplash.com/random"
+        <div class="col-12 col-lg-4 col-md-6 mb-3"><img
+            src="https://res.cloudinary.com/balls-to-code/image/upload/v1599727678/eBay/Phone/Samsung%20Galaxy%20S20%20Plus%20%28EE%29%205G%20100920/Resized/IMG_4462JPG_gkmxdn.png"
             alt="" class="img-fluid">
         </div>
       </div>
 
-    </div>
-    <div class="d-flex justify-content-center">
-      <button class="btn btn-primary py-3 btn-lg mb-5">Add To Cart</button>
     </div>
   </div>
 </body>
