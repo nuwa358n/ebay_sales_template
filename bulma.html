@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello Bulma!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/brands.min.css"
+    integrity="sha512-AMDXrE+qaoUHsd0DXQJr5dL4m5xmpkGLxXZQik2TvR2VCVKT/XRPQ4e/LTnwl84mCv+eFm92UG6ErWDtGM/Q5Q=="
+    crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --dark: #071013;
+      --font: #DFE0E2;
+      --primary: #23b5d3;
+      --secondary: #75ABBC;
+      --containerBG: #eee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    html,
+    body {
+      background-color: var(--dark);
+      height: 100vh;
+      font-size: 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .nav {
+      height: 10vh;
+      padding: 0 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .container {
+      background-color: var(--containerBG);
+      color: var(--dark);
+      padding: 5vw 0 0 0;
+    }
+
+    .shop-name {
+      color: var(--secondary);
+      font-size: 2rem;
+    }
+
+    .link {
+      color: var(--font);
+      padding-left: 10px;
+    }
+
+    .link:hover {
+      color: var(--secondary);
+    }
+
+    .item-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .item-header-title {
+      color: var(--secondary);
+      font-size: 2rem;
+    }
+
+    .item-header-subtitle {
+      color: var(--dark);
+      font-size: 1rem;
+    }
+
+    .item-header-image {
+      margin-top: 3vh;
+      height: 50vh;
+    }
+
+    .item-details {
+      margin-top: 3vh;
+      background-color: var(--dark);
+      padding: 5vw 10vw;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');
+      background-size: cover;
+    }
+
+    .item-details-heading {
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-bottom: 2px solid var(--secondary);
+      color: var(--secondary);
+    }
+
+    .item-details-description,
+    .item-details-condition {
+      font-size: 1.2rem;
+      color: var(--font);
+      margin-bottom: 5vw;
+    }
+
+    .terms {
+      padding: 5vw 10vw;
+    }
+
+    .terms-return,
+    .terms-shipping,
+    .terms-about {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 5vw;
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-gap: 2vw;
+      padding: 5vw 10vw;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <h1 class="shop-name">SHOP NAME</h1>
+    <div class="links">
+      <a class="link" href="#!">CONTACT</a>
+      <a class="link" href="#!">SHOP</a>
+      <a class="link" href="#!">SOCIAL</a>
+    </div>
+
+  </nav>
+  <main class="container">
+    <div class="item-header">
+      <h1 class="item-header-title">ITEM NAME</h1>
+      <h3 class="item-header-subtitle">Subtitle</h3>
+      <img
+        src="https://images.unsplash.com/photo-1551721434-8b94ddff0e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        alt="" class="item-header-image">
+    </div>
+    <div class="item-details">
+      <div class="item-details-heading">
+        <h3>Description</h3>
+      </div>
+      <p class="item-details-description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam culpa tempora
+        possimus illo quo consectetur quos fuga rem voluptate error nam molestiae ipsa eius
+        architecto atque at, praesentium illum et provident saepe? Ratione repellat voluptas ut
+        incidunt nostrum ea laborum voluptates quibusdam consequatur provident, iste illum esse
+        velit accusamus!
+      </p>
+      <div class="item-details-heading">
+        <h3>Condition</h3>
+      </div>
+      <p class="item-details-condition">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aperiam culpa tempora
+        possimus illo quo consectetur quos fuga rem voluptate error nam molestiae ipsa eius
+        architecto atque at, praesentium illum et provident saepe? Ratione repellat voluptas ut
+        incidunt nostrum ea laborum voluptates quibusdam consequatur provident, iste illum esse
+        velit accusamus!
+      </p>
+      <div class="item-details-heading">
+        <h3>Included</h3>
+      </div>
+      <ul class="item-details-condition">
+        <li>ITEM ONE</li>
+        <li>ITEM ONE</li>
+        <li>ITEM ONE</li>
+        <li>ITEM ONE</li>
+        <li>ITEM ONE</li>
+      </ul>
+    </div>
+    <div class="image-gallery">
+      <img
+        src="https://images.unsplash.com/photo-1501162946741-4960f990fdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      <img
+        src="https://images.unsplash.com/photo-1501162946741-4960f990fdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      <img
+        src="https://images.unsplash.com/photo-1501162946741-4960f990fdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      <img
+        src="https://images.unsplash.com/photo-1501162946741-4960f990fdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      <img
+        src="https://images.unsplash.com/photo-1501162946741-4960f990fdf4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+        alt="">
+    </div>
+    <div class="terms">
+      <div class="terms-return">
+        <div class="item-details-heading">
+          <h3>Returns Policy</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum explicabo optio ipsam
+          beatae dolorum adipisci soluta eos ea, iusto quas tempore sit tempora eligendi consectetur
+          velit ullam ratione veniam magni alias dolore enim eum hic dignissimos aperiam. Libero
+          suscipit dicta eius tempore beatae sit voluptas vitae? Nesciunt quidem iusto maiores.</p>
+      </div>
+      <div class="terms-shipping">
+        <div class="item-details-heading">
+          <h3>Shipping</h3>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque possimus fugiat
+          corrupti quidem dicta architecto optio assumenda vero culpa quibusdam eius error quod,
+          placeat ex expedita in aut cum qui!</p>
+      </div>
+      <div class="terms-about">
+        <div class="item-details-heading">
+          <h3>Shipping</h3>
+        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque possimus fugiat
+          corrupti quidem dicta architecto optio assumenda vero culpa quibusdam eius error quod,
+          placeat ex expedita in aut cum qui!</p>
+      </div>
+
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>
